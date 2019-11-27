@@ -1,4 +1,4 @@
-package com.example.native_utils;
+package com.hjc.hjc_native_utils;
 
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -24,15 +24,15 @@ import com.meituan.android.walle.ChannelInfo;
 import com.meituan.android.walle.WalleChannelReader;
 
 /** NativeUtilsPlugin */
-public class NativeUtilsPlugin implements MethodCallHandler {
+public class HjcNativeUtilsPlugin implements MethodCallHandler {
 
     Registrar mRegistrar;
 
     /** Plugin registration. */
     public static void registerWith(Registrar registrar) {
         final MethodChannel channel = new MethodChannel(registrar.messenger(), "piugins.hjc.com/native_utils");
-        final NativeUtilsPlugin NativeUtilsPlugin = new NativeUtilsPlugin(registrar);
-        channel.setMethodCallHandler(NativeUtilsPlugin);
+        final HjcNativeUtilsPlugin hjcNativeUtilsPlugin = new HjcNativeUtilsPlugin(registrar);
+        channel.setMethodCallHandler(hjcNativeUtilsPlugin);
     }
 
     private NativeUtilsPlugin(Registrar mRegistrar) {
