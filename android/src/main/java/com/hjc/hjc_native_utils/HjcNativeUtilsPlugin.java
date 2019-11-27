@@ -35,7 +35,7 @@ public class HjcNativeUtilsPlugin implements MethodCallHandler {
         channel.setMethodCallHandler(hjcNativeUtilsPlugin);
     }
 
-    private NativeUtilsPlugin(Registrar mRegistrar) {
+    private HjcNativeUtilsPlugin(Registrar mRegistrar) {
         this.mRegistrar = mRegistrar;
     }
 
